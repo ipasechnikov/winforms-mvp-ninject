@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsMvpNinject.App", "WinFormsMvpNinject.App\WinFormsMvpNinject.App.csproj", "{ACB3D4ED-2B5C-4584-8CE3-7DA5AD6E811D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsMvpNinject.Tests", "WinFormsMvpNinject.Tests\WinFormsMvpNinject.Tests.csproj", "{CA17147C-30B3-491A-BD49-E38D4C3F5127}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACB3D4ED-2B5C-4584-8CE3-7DA5AD6E811D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB3D4ED-2B5C-4584-8CE3-7DA5AD6E811D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB3D4ED-2B5C-4584-8CE3-7DA5AD6E811D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB3D4ED-2B5C-4584-8CE3-7DA5AD6E811D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA17147C-30B3-491A-BD49-E38D4C3F5127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA17147C-30B3-491A-BD49-E38D4C3F5127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA17147C-30B3-491A-BD49-E38D4C3F5127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA17147C-30B3-491A-BD49-E38D4C3F5127}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66213D20-D846-4FE8-ADB6-1A7670D00A3C}
+	EndGlobalSection
+EndGlobal
