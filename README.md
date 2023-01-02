@@ -4,6 +4,31 @@ This is a small example project that shows how you can utilize MVP (Model-View-P
 
 I hope this example will come in handy for other developers who want to improve code quality of their WinForms application.
 
+## Table of Contents
+
+- [WinForms app with Model-View-Presenter pattern and Ninject DI](#winforms-app-with-model-view-presenter-pattern-and-ninject-di)
+  - [Table of Contents](#table-of-contents)
+  - [Foreword](#foreword)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+      - [.NET Core or .NET Framework 4.8](#net-core-or-net-framework-48)
+      - [Visual Studio](#visual-studio)
+      - [Why Ninject?](#why-ninject)
+    - [Project structure](#project-structure)
+      - [WinFormsMvpNinject.App](#winformsmvpninjectapp)
+        - ["Ninject/Modules" folder](#ninjectmodules-folder)
+        - ["Ninject/Strategies" folder](#ninjectstrategies-folder)
+        - ["Models" folder](#models-folder)
+        - ["Views" folder](#views-folder)
+        - ["Presenters" folder](#presenters-folder)
+        - ["Services" folder](#services-folder)
+        - ["Factories" folder](#factories-folder)
+      - [WinFormsMvpNinject.Tests](#winformsmvpninjecttests)
+  - [Built With](#built-with)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
+
 ## Foreword
 
 Recently I've been working quite a lot on legacy WinForms applications.
@@ -84,11 +109,11 @@ internal static class Program
 }
 ```
 
-#### "Models" folder
+##### "Models" folder
 
 Nothing special. We place Models of MVP pattern here. In our case we have a tiny `IUser` interface and its implementation `DefaultUser`.
 
-#### "Views" folder
+##### "Views" folder
 
 Here we place our Views of MVP pattern. Let's take a closer look at code of `IMainView` interface and its implementation `MainForm`.
 
@@ -138,7 +163,7 @@ public MainForm()
 }
 ```
 
-#### "Presenters" folder
+##### "Presenters" folder
 
 This folder contains Presenters of MVP pattern. Compared to Views, Presenters don't have much going on in terms of injections and cleaning up. 
 
@@ -156,7 +181,7 @@ public async Task GetUsers()
 }
 ```
 
-#### "Services" folder
+##### "Services" folder
 
 This one contains your services that you may use in Presenters to get users from API, database or something else.
 In our case we have a dummy service that always returns hardcoded users.
@@ -178,7 +203,7 @@ public class DefaultUserService : IUserService
 }
 ```
 
-#### "Factories" folder
+##### "Factories" folder
 
 We are not interested in this folder itself but in one interface that in contains.
 `IViewFactory` is an interface that is bound by Ninject in `MainModule` in a special way.
