@@ -1,4 +1,5 @@
 # WinForms app with Model-View-Presenter pattern and Ninject DI
+[![.NET Core Desktop](https://github.com/ipasechnikov/winforms-mvp-ninject/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/ipasechnikov/winforms-mvp-ninject/actions/workflows/dotnet-desktop.yml)
 
 This is a small example project that shows how you can utilize MVP (Model-View-Presenter) pattern and Ninject dependency injector in your good old WinForms application.
 
